@@ -6,21 +6,36 @@
   <!-- CSS -->
   <link rel="stylesheet" href="../out/output.css">
   <!-- favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-  <link rel="manifest" href="icon/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="../icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icon/favicon-16x16.png">
+  <link rel="manifest" href="../icon/site.webmanifest">
   <!-- Title of page -->
   <title>Welcome to Stack &#169</title>
   <!-- imports -->
   <script src="https://kit.fontawesome.com/242d91a26c.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <div class="h-screen w-screen bg-no-repeat bg-cover lg:hidden" style ="background-image: url('https://images.unsplash.com/photo-1560840067-ddcaeb7831d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2t5c2NyYXBlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60');">
-    <nav class="w-full h-16">
-      <i class="fa-solid fa-city"></i>
-      <h1 clas ="">Stack</h1>
-    </nav>
+<body class ="h-screen w-screen">
+  <div class=" bg-no-repeat bg-cover lg:hidden h-full w-full" style ="background-image: url('https://images.unsplash.com/photo-1560840067-ddcaeb7831d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2t5c2NyYXBlcnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60');">
+    <div class="backdrop-blur-sm flex flex-col backdrop-brightness-75 h-full w-full">
+      <nav class="flex w-full h-9 justify-around text-2xl text-white pt-7">
+        <i class="fa-solid fa-city"></i>
+        <h1 class ="font-pacifico text-3xl text-yellow-300">Stack</h1>
+        <i class="fa-solid fa-cubes-stacked"></i>
+      </nav>
+      <div class = "flex flex-col grow justify-around ">
+        <h1 class = "font-pacifico text-white text-center text-5xl ">Ready to leave your <span class="text-yellow-300">worries</span> to us.</h1>
+        <div>
+          <h1 class = "font-pacifico text-white text-center text-3xl "> We let you manage your  </h1>
+          <div class="font-pacifico text-yellow-300  w-full items-center text-3xl text-center flex">
+            <i class="fa-brands fa-free-code-camp w-1/4 h-9 pl-5"></i>
+            <h1 class = "toType"></h1>
+          </div>
+        </div>
+        <button class="rounded-full border-2 w-fit px-10 self-center text-white text-3xl font-pacifico border-white"> Let's Go</button>
+      </>
+    </div>
   </div>
+<script src="../out/output.js"></script>
 </body>
 </html>

@@ -482,38 +482,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100%;
 }
 
-.h-16{
-  height: 4rem;
-}
-
 .h-9{
   height: 2.25rem;
-}
-
-.h-auto{
-  height: auto;
-}
-
-.h-6{
-  height: 1.5rem;
-}
-
-.h-1\/6{
-  height: 16.666667%;
-}
-
-.h-2\/6{
-  height: 33.333333%;
-}
-
-.h-1{
-  height: 0.25rem;
-}
-
-.h-fit{
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
 }
 
 .w-screen{
@@ -532,10 +502,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-}
-
-.flex-grow{
-  flex-grow: 1;
 }
 
 .grow{
@@ -575,6 +541,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-size: cover;
 }
 
+.bg-auto{
+  background-size: auto;
+}
+
+.bg-fixed{
+  background-attachment: fixed;
+}
+
 .bg-no-repeat{
   background-repeat: no-repeat;
 }
@@ -590,6 +564,22 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pl-5{
   padding-left: 1.25rem;
+}
+
+.pt-20{
+  padding-top: 5rem;
+}
+
+.pt-1{
+  padding-top: 0.25rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
+}
+
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .text-center{
@@ -637,8 +627,38 @@ Ensure the default browser behavior of the `hidden` attribute.
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
+@media (min-width: 768px){
+  .md\:bg-contain{
+    background-size: contain;
+  }
+
+  .md\:bg-cover{
+    background-size: cover;
+  }
+}
+
 @media (min-width: 1024px){
-  .lg\:hidden{
-    display: none;
+  .lg\:flex{
+    display: flex;
+  }
+
+  .lg\:w-1\/2{
+    width: 50%;
+  }
+
+  .lg\:bg-auto{
+    background-size: auto;
+  }
+
+  .lg\:bg-contain{
+    background-size: contain;
+  }
+
+  .lg\:bg-left-bottom{
+    background-position: left bottom;
+  }
+
+  .lg\:pl-20{
+    padding-left: 5rem;
   }
 }

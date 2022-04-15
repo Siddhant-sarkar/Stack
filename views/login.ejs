@@ -24,7 +24,7 @@
         <i class="fa-solid fa-cubes-stacked hover:text-yellow-300"></i>
       </nav>
       <div class = "h-screen ">
-        <form action="#" method="post" class = "flex flex-col justify-around h-full w-full items-center">
+        <form action="authenticate" method="post" class = "flex flex-col justify-around h-full w-full items-center">
             <div class ='flex flex-col items-center space-y-7'>
               <input type="text" name="username" id="username " placeholder="<%= who ==='user'?'User':'Admin' %> " class ="bg-transparent  border-2 border-white placeholder-white rounded-full p-5 px-14 text-white ">
               <input type="password" name="password" id="password" placeholder="<%= wrong==='true'?'Invalid Password':'Password' %>" class ="bg-transparent border-2 rounded-full p-5 px-14 text-white <%= wrong==='true'?'border-red-500 placeholder-red-500 animate-pulse':'border-white placeholder-white' %>  ">

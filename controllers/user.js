@@ -1,3 +1,3 @@
 exports.loginPage = (req,res,next) =>{
-  res.render('login',{who:'user'});
+  res.render('login',{who:'user',wrong:'false'});
 }

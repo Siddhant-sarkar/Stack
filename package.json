@@ -1,71 +1,11 @@
 {
-  "devDependencies": {
-    "tailwindcss": "^3.0.24"
-  },
   "name": "stack",
-  "description": "This is a management system  made using Tailwind Css and Node.js , Express using the Sql database. # Contributors :man_technologist: [Siddhant Sarkar](https://github.com/Siddhant-sarkar/)",
   "version": "1.0.0",
-  "main": "tailwind.config.js",
-  "dependencies": {
-    "acorn": "^7.4.1",
-    "acorn-node": "^1.8.2",
-    "anymatch": "^3.1.2",
-    "acorn-walk": "^7.2.0",
-    "braces": "^3.0.2",
-    "arg": "^5.0.1",
-    "binary-extensions": "^2.2.0",
-    "chokidar": "^3.5.3",
-    "color-name": "^1.1.4",
-    "cssesc": "^3.0.0",
-    "defined": "^1.0.0",
-    "camelcase-css": "^2.0.1",
-    "fast-glob": "^3.2.11",
-    "dlv": "^1.1.3",
-    "didyoumean": "^1.2.2",
-    "fill-range": "^7.0.1",
-    "fastq": "^1.13.0",
-    "has": "^1.0.3",
-    "fsevents": "^2.3.2",
-    "function-bind": "^1.1.1",
-    "glob-parent": "^6.0.2",
-    "is-extglob": "^2.1.1",
-    "is-binary-path": "^2.1.0",
-    "is-glob": "^4.0.3",
-    "lilconfig": "^2.0.5",
-    "is-number": "^7.0.0",
-    "is-core-module": "^2.8.1",
-    "merge2": "^1.4.1",
-    "normalize-path": "^3.0.0",
-    "nanoid": "^3.3.2",
-    "minimist": "^1.2.6",
-    "micromatch": "^4.0.5",
-    "detective": "^5.2.0",
-    "postcss": "^8.4.12",
-    "object-hash": "^3.0.0",
-    "picocolors": "^1.0.0",
-    "path-parse": "^1.0.7",
-    "postcss-selector-parser": "^6.0.10",
-    "postcss-nested": "^5.0.6",
-    "postcss-value-parser": "^4.2.0",
-    "postcss-js": "^4.0.0",
-    "quick-lru": "^5.1.1",
-    "reusify": "^1.0.4",
-    "queue-microtask": "^1.2.3",
-    "readdirp": "^3.6.0",
-    "source-map-js": "^1.0.2",
-    "resolve": "^1.22.0",
-    "run-parallel": "^1.2.0",
-    "xtend": "^4.0.2",
-    "to-regex-range": "^5.0.1",
-    "supports-preserve-symlinks-flag": "^1.0.0",
-    "yaml": "^1.10.2",
-    "util-deprecate": "^1.0.2",
-    "postcss-load-config": "^3.1.4",
-    "picomatch": "^2.3.1"
-  },
+  "description": "This is a management system  made using Tailwind Css and Node.js , Express using the Sql database. # Contributors :man_technologist: [Siddhant Sarkar](https://github.com/Siddhant-sarkar/)",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tail" : "npx tailwindcss -i ./src/input.css -o ./out/output.css --watch" 
+    "start": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -77,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/Siddhant-sarkar/Stack/issues"
   },
-  "homepage": "https://github.com/Siddhant-sarkar/Stack#readme"
+  "homepage": "https://github.com/Siddhant-sarkar/Stack#readme",
+  "devDependencies": {
+    "express": "^4.17.3",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "ejs": "^3.1.6"
+  }
 }

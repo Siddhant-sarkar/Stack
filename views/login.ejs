@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS -->
-  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="../static/css/login.css">
   <!-- favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./icon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./icon/favicon-16x16.png">
-  <link rel="manifest" href="./icon/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="./stati/icon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./static/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./static/icon/favicon-16x16.png">
+  <link rel="manifest" href="./static/icon/site.webmanifest">
   <!-- Title of page -->
   <title>Welcome to Stack &#169</title>
   <!-- imports -->
@@ -26,7 +26,7 @@
       <div class = "h-screen ">
         <form action="#" method="post" class = "flex flex-col justify-around h-full w-full items-center">
             <div class ='flex flex-col items-center space-y-7'>
-              <input type="text" name="username" id="username " placeholder="Admin/User Id" class ="bg-transparent  border-2 border-white rounded-full p-5 px-14 text-white ">
+              <input type="text" name="username" id="username " placeholder="<%= who ==='user'?'User':'Admin' %> " class ="bg-transparent  border-2 border-white rounded-full p-5 px-14 text-white ">
               <input type="password" name="password" id="password" placeholder="password" class ="bg-transparent border-2 border-white rounded-full p-5 px-14 text-white">
             </div>
             <div>

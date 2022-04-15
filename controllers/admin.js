@@ -2,7 +2,7 @@ const db = require("../util/database");
 const login = require("../models/aLogin");
 exports.adminLogin = (req, res, next) => {
   res.render("login", {
-    who: "admin",
+    who: "Admin",
     wrong: "false",
   });
 };
@@ -15,7 +15,7 @@ exports.adminAuthenticate = (req, res, next) => {
       if (rows[0].cnt) {
         return res.send("welcome sir");
       } else {
-        return res.render("login",{who:'admin',wrong:'true'});
+        return res.render("login",{who:'Admin',wrong:'true'});
       }
     })
     .catch((err) => console.log(err));

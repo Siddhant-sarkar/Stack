@@ -6,5 +6,6 @@ router.get('/login',userController.userLogin);
 
 router.post('/authenticate',userController.userAuthenticate);
 router.get('/dashboard',userController.userDashboard);
-// router.
+router.post('/addComplaint',userController.addComplaint);
+router.post('/resolve',userController.resolveComplaints);
 module.exports = router;
